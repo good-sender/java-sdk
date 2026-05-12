@@ -1,0 +1,14 @@
+LICENSE
+CHANGELOG.md
+README.md
+tests/**
+scripts/**
+openapi/**
+openapitools.json
+build.gradle
+build.sbt
+settings.gradle
+gradle.properties
+gradle/**
+gradlew
+gradlew.bat

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.goodsender.tests</groupId>
+  <artifactId>runner-java</artifactId>
+  <version>0.0.0</version>
+  <packaging>jar</packaging>
+
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.goodsender</groupId>
+      <artifactId>goodsender-sdk</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.1</version>
+        <!-- mainClass is selected at the CLI via -Dexec.mainClass=Runner
+             (mock mode) or -Dexec.mainClass=Conformance (dev mode). No
+             default here, because a default in <configuration> would
+             silently override the -D flag. -->
+      </plugin>
+    </plugins>
+  </build>
+</project>

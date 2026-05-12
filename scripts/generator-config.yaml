@@ -1,0 +1,33 @@
+generatorName: java
+outputDir: .
+inputSpec: ../openapi/goodsender.yaml
+gitUserId: good-sender
+gitRepoId: java-sdk
+packageVersion: 0.1.0
+# `native` uses java.net.http.HttpClient (built into JDK 11+) and Jackson.
+# Zero HTTP client transitive deps, no Kotlin stdlib pulled through OkHttp,
+# no Gson legacy.
+library: native
+additionalProperties:
+  httpUserAgent: goodsender-java/0.1.0
+  groupId: com.goodsender
+  artifactId: goodsender-sdk
+  artifactVersion: 0.1.0
+  artifactDescription: Official GoodSender API client for Java
+  artifactUrl: https://github.com/good-sender/java-sdk
+  developerName: GoodSender
+  developerEmail: support@goodsender.com
+  developerOrganization: GoodSender
+  developerOrganizationUrl: https://goodsender.com
+  scmConnection: scm:git:git@github.com:good-sender/java-sdk.git
+  scmDeveloperConnection: scm:git:git@github.com:good-sender/java-sdk.git
+  scmUrl: https://github.com/good-sender/java-sdk
+  licenseName: MIT
+  licenseUrl: https://github.com/good-sender/java-sdk/blob/main/LICENSE
+  invokerPackage: com.goodsender.client
+  apiPackage: com.goodsender.client.api
+  modelPackage: com.goodsender.client.model
+  hideGenerationTimestamp: true
+# Gradle / sbt build files are filtered out via .openapi-generator-ignore in
+# sdks/goodsender-java/ (driver script materializes the ignore file). Maven
+# pom.xml is the only build file we want to keep.
