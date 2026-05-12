@@ -43,6 +43,7 @@ tests/**
 scripts/**
 openapi/**
 openapitools.json
+api/openapi.yaml
 build.gradle
 build.sbt
 settings.gradle
