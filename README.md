@@ -2,15 +2,6 @@
 
 Official client library for the GoodSender email API. Package: `com.goodsender:goodsender-sdk`
 
-## Installation
-
-```xml
-<dependency>
-  <groupId>com.goodsender</groupId>
-  <artifactId>goodsender-sdk</artifactId>
-  <version>0.1.0</version>
-</dependency>
-```
 
 ## Quick start
 
@@ -74,7 +65,7 @@ System.out.println("emails=" + (list.getEmails() == null ? 0 : list.getEmails().
 
 ## Documentation
 
-- API reference: <https://api.goodsender.com/docs>
+- API reference: <https://goodsender.com/docs>
 - OpenAPI spec: `openapi/goodsender.yaml` in this repo
 - Conformance tests: `tests/`
 
